@@ -1,24 +1,19 @@
-import requests
 import numpy as np
 import os
-import tensorflow as tf
 import matplotlib.pyplot as plt
-from keras.models import Model, Sequential
+from keras.models import Model
 from keras.layers import Input, Dense, Conv2D, UpSampling2D, MaxPool2D, Activation, Dropout, BatchNormalization, ReLU
-from keras import backend as K
 from keras.datasets import cifar10
-from keras import initializers, regularizers
+from keras import regularizers
 from keras.optimizers import SGD, Adagrad, Adadelta, RMSprop, Adam
-from keras.utils import multi_gpu_model
+# from keras.utils import multi_gpu_model
 from livelossplot import PlotLossesKeras
 
-
-# Create the result directory in the working directory
 # Create the directory for TensorBoard variables if there is not.
 if not os.path.exists("./Result"):
   os.makedirs("./Result")
 
-# prepare the data
+"""Prepare the data"""
 
 # Load the MNIST data
 from keras.datasets import mnist
@@ -244,8 +239,6 @@ plot_pattern(pattern_mean_removed_cf10)
 # Play with the CNN layers architecture, activation functions and note your observations on the loss and the decoded image quality.
 
 # Let's take out the airplane and bird for comparison. And discuss in detail about them.
-
-
 def plot_pattern_comparison(inputdata):
     x = np.arange(inputdata.shape[1])
     #     for digit in range(inputdata.shape[0]):
