@@ -19,3 +19,4 @@ Since the encoder and decoder only keep the important feature, it naturally has 
 filter away the noise. 
 
 In the figure2.png, you can find the denoise effect of the encoder and decoder.    
+![denoise](https://github.com/nebulaai/orion-image-encoder-decoder/blob/master/figure2.png)
