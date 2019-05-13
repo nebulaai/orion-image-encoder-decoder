@@ -1,6 +1,6 @@
 # Model Description #
 
-This is a simplified image encoder and decoder model for testing purpose.
+This trial project is a simplified image encoder and decoder model.
 The input data is the CF10 image data-set.
 
 # Encode - latent - decode #
